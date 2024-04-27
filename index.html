@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Liste de Jeux Vidéos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Liste de Jeux Vidéos par Console</h1>
+    <div id="jeux-container"></div>
+
+    <h2>Ajouter un Nouveau Jeu</h2>
+    <form id="form-ajout-jeu">
+      <input type="text" id="nom-jeu" placeholder="Nom du jeu" required />
+      <select id="console-jeu" required>
+        <option value="">Choisissez une console</option>
+        <option value="Nes">Nes</option>
+        <option value="Gameboy">Gameboy</option>
+        <option value="Super Nintendo">Super Nintendo</option>
+        <option value="Nintendo 64">Nintendo 64</option>
+        <option value="Wii">Wii</option>
+        <option value="Wii U">Wii U</option>
+        <option value="Gamecube">Gamecube</option>
+        <option value="Nintendo Switch">Nintendo Switch</option>
+        <option value="Master System">Master System</option>
+        <option value="Master System 2">Master System 2</option>
+        <option value="Megadrive">Megadrive</option>
+        <option value="Megadrive 2">Megadrive 2</option>
+        <option value="Saturn">Saturn</option>
+        <option value="Dreamcast">Dreamcast</option>
+        <option value="Playstation">Playstation</option>
+        <option value="Playstation 2">Playstation 2</option>
+        <option value="Playstation 3">Playstation 3</option>
+        <option value="Playstation 4">Playstation 4</option>
+        <option value="Playstation 5">Playstation 5</option>
+        <option value="PSP">PSP</option>
+        <option value="PS Vita">PS Vita</option>
+        <option value="Nintendo DS">Nintendo DS</option>
+        <option value="Nintendo 3DS">Nintendo 3DS</option>
+        <option value="Game Gear">Game Gear</option>
+        <option value="Steam Deck">Steam Deck</option>
+      </select>
+
+      <select id="qualite-jeu" required>
+        <option value="">Sélectionnez la qualité</option>
+        <option value="super">Super jeu</option>
+        <option value="bon">Bon jeu</option>
+        <option value="moyen">Jeu moyen</option>
+        <option value="mauvais">Mauvais jeu</option>
+      </select>
+      <input type="file" id="image-jeu" accept="image/*" required />
+      <button type="submit">Ajouter Jeu</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
